@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Подключаем шрифт Bangers -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="description">Используй клавиши "вверх"/"вниз" для движения игрока и пробел для стрельбы <br>
+        При столкновении с рыбкой в желтом шаре - на 10 секунд активируется возможность стрелять одновременно из носа и
+        хвоста <br>
+        Для победы необходимо за 30 секунд набрать 80 очков
+    </div>
+
+    <canvas id="canvas1"></canvas>
+
+    <!-- Characters -->
+    <img id="player" src="Assets/player.png">
+    <img id="angler1" src="Enemies/angler1.png">
+    <img id="angler2" src="Enemies/angler2.png">
+    <img id="lucky" src="Enemies/lucky.png">
+    <img id="hivewhale" src="Enemies/hivewhale.png">
+    <img id="drone" src="Enemies/drone.png">
+
+    <!-- Props -->
+    <img id="projectile" src="Assets/projectile.png">
+    <img id="gears" src="Assets/gears.png">
+    <img id="smokeExplosion" src="Collision Animations/smokeExplosion.png">
+    <img id="fireExplosion" src="Collision Animations/fireExplosion.png">
+
+    <!-- Environment -->
+    <img id="layer1" src="Layers/layer1.png">
+    <img id="layer2" src="Layers/layer2.png">
+    <img id="layer3" src="Layers/layer3.png">
+    <img id="layer4" src="Layers/layer4.png">
+
+
+    <script src="src/Projectile.js"></script>
+    <script src="src/Particle.js"></script>
+
+    <!-- InputHandler -->
+    <script src="src/InputHandler.js"></script>
+
+    <!-- Enemies -->
+    <script src="src/Enemies/Enemy.js"></script>
+    <script src="src/Enemies/Angler1.js"></script>
+    <script src="src/Enemies/Angler2.js"></script>
+    <script src="src/Enemies/Drone.js"></script>
+    <script src="src/Enemies/LuckyFish.js"></script>
+    <script src="src/Enemies/HiveWhale.js"></script>
+
+    <!-- UI -->
+    <script src="src/UI/UI.js"></script>
+    <script src="src/UI/Layer.js"></script>
+    <script src="src/UI/Background.js"></script>
+
+    <!-- Explosions -->
+    <script src="src/Explosions/Explosion.js"></script>
+    <script src="src/Explosions/SmokeExplosion.js"></script>
+    <script src="src/Explosions/FireExplosion.js"></script>
+
+    <script src="src/Player.js"></script>
+    <script src="src/Game.js"></script>
+
+    <!-- Main script file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
